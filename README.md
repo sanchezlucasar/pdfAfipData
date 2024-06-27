@@ -20,12 +20,10 @@ Instalacion de librería   -
 
 # Funcionalidades 
 
-<h3>Cargar facturas de afip, en formato pdf ../pdfplumber/modelAfip.py </h3>
+<h3>para probar Cargar facturas de afip, en formato pdf dentro de la direccion../pdfplumber/modelAfip.py </h3>
 
-  * dentro del archivo modelAfip.py casi abajo al final hay una seccion para agregar los path de las facturas en forma de arreglo para probar. 
-
-  * En la carpeta facturas, agregar las facturas a procesar 
-
+  *  al final del archivo modelAfip.py hay una seccion para agregar los path de las facturas en forma de arreglo para probar. 
+  
   * en la seccion pdf_paths = [ 
              './facturas/1.pdf',
              './facturas/2.pdf',
@@ -33,6 +31,29 @@ Instalacion de librería   -
              './facturas/4.pdf'
              ]
   * Luego de ejecutar  python modelAfip.py se creara un archivo llamado prueba.json que tendrá un arreglo de json con los datos de la factura correspondiente 
+
+<h3>para probar La api </h3>
+
+  * Ejecutar el siguiente comando con el entorno virtual activado, debe aparecer de la siguiente manera , Si no aparece (mi_entorno) delante hay que activar el entorno virtual de python
+
+```ps
+ > (mi_entorno) PS C:\........\pdfplumber> uvicorn main:app --reload
+``` 
+
+  * Si todo es correcto debe aparecer lo siguiente
+
+ ```ps
+ > INFO:     Will watch for changes in these directories: ['C:\\.....\\.....\\....\\pdfplumber']
+ > INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+ > INFO:     Started reloader process [1456] using WatchFiles
+ > INFO:     Started server process [12040]
+ > INFO:     Waiting for application startup.
+ > INFO:     Application startup complete.
+``` 
+
+ *  para correr la api, desde el puerto http://127.0.0.1:8000/process_pdf/ , seleccionar el pdf, desde Form, seleccionar file, Luego ponerle nombre files y submit
+  
+
 
 # Pros.
 
