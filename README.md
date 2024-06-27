@@ -1,4 +1,4 @@
-Se configura con Python, utilizando la librería pdfplumber . una api para obtener los datos en formato JSON de una factura de AFIP, A, B o C 
+Se configura una API con Python utilizando la librería pdfplumber para obtener los datos en formato JSON de una factura electrónica de AFIP, ya sea A, B o C, en formato PDF. Es importante tener en cuenta que esto solo sirve para las facturas que se realizan electrónicamente desde la página oficial de AFIP, es decir, que no acepta modelos de facturas personalizadas. En esos otros casos particulares, se puede crear un modelo para cada uno utilizando la misma librería y ordenando las expresiones regulares de cada sección.
 
 # pdfplumber
 
